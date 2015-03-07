@@ -1,0 +1,40 @@
+.analog-clock {
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+}
+
+.analog-clock .hour-hand-container,
+.analog-clock .minute-hand-container,
+.analog-clock .center-circle-container {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.analog-clock .hour-hand {
+  margin: 25% auto;
+  width: 0;
+  height: 40%;
+  border: 3px solid red;
+}
+
+.analog-clock .minute-hand {
+  margin: 15% auto;
+  width: 0;
+  height: 55%;
+  border: 2px solid blue;
+}
+
+.analog-clock .center-circle {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 5px solid black;
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
