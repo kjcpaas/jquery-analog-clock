@@ -11,6 +11,7 @@ This is a very early stage of the plugin so there are still lots of planned impr
 - Constructs basic analog clock
 - Displays time based on the given time
 - Support for multiple clocks
+- Responsive
 
 ## Dependencies
 
