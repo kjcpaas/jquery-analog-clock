@@ -38,25 +38,39 @@ Options can also be specified on the element itself. These options take preceden
 
 Time to be displayed in the clock
 
-**Default:** '0:00'
+*Default:* '0:00'
 
 ##### timeFormat
 
 Time format to be used in processing time values. Refer to Moment.js [parsing documentation](http://momentjs.com/docs/#/parsing/string-format/) for other formats you can use.
 
-**Default:** 'H:mm' (24-hour format)
+*Default:* 'H:mm' (24-hour format)
 
 ##### showLabels
 
 Shows labels for the hours.
 
-**Default:** true
+*Default:* true
 
 ##### hourLabels
 
 Labels that will be shown when `showLabels` is true.
 
-**Default:** ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+*Default:* ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+
+##### moveable
+
+Allows changing of time by moving clock hands.
+
+*Default:* true
+
+##### quickHourSelect
+
+Allows changing of time by clicking hour labels
+
+*Default:* true
+
+#### Callback options
 
 ##### onTimeSet
 

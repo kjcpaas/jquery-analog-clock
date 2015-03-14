@@ -60,6 +60,8 @@
 }
 
 .analog-clock .hour-label {
+  width: 20px;
+  cursor: pointer;
   position: absolute;
   height: 50%;
   left: 50%;
@@ -72,6 +74,25 @@
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
   -khtml-user-select: none;
+}
+
+.analog-clock .hour-label .spoke {
+  position: absolute;
+  top: 0;
+  margin-top: 20px;
+  height: 100%;
+  width: 0;
+  display: none;
+  border: 1px solid rgba(86,61,124,0.2);
+}
+
+.analog-clock.moveable .quick-hour-select .hour-label:hover .hour-name{
+  background-color: rgba(86,61,124, 0.3);
+  border-radius: 50%;
+}
+
+.analog-clock.moveable .quick-hour-select .hour-label:hover .spoke {
+  display: inline-block;
 }
 
 .analog-clock .hour-1 {
