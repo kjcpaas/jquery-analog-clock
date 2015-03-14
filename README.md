@@ -76,3 +76,7 @@ $('#clock').analogClock('getTime', 'h:mm');
 ##### getTime(format)
 
 Gets the time displayed in the clock. If format is not specified, time will be formatted by `initTime`.
+
+##### getMeridian()
+
+Determines if time is AM or PM. (returns 'am' or 'pm')
