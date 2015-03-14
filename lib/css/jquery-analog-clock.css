@@ -6,7 +6,8 @@
 
 .analog-clock .hour-hand-container,
 .analog-clock .minute-hand-container,
-.analog-clock .center-circle-container {
+.analog-clock .center-circle-container,
+.analog-clock .label-container {
   width: inherit;
   height: inherit;
   position: absolute;
@@ -35,6 +36,203 @@
   top: 50%;
   position: relative;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.analog-clock .hour-label {
+  position: absolute;
+  height: 50%;
+  left: 50%;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.analog-clock .hour-1 {
+  -webkit-transform: translateX(-50%) rotate(30deg);
+  -moz-transform: translateX(-50%) rotate(30deg);
+  -ms-transform: translateX(-50%) rotate(30deg);
+  -o-transform: translateX(-50%) rotate(30deg);
+  transform: translateX(-50%) rotate(30deg);
+}
+
+.analog-clock .hour-2 {
+  -webkit-transform: translateX(-50%) rotate(60deg);
+  -moz-transform: translateX(-50%) rotate(60deg);
+  -ms-transform: translateX(-50%) rotate(60deg);
+  -o-transform: translateX(-50%) rotate(60deg);
+  transform: translateX(-50%) rotate(60deg);
+}
+
+.analog-clock .hour-3 {
+  -webkit-transform: translateX(-50%) rotate(90deg);
+  -moz-transform: translateX(-50%) rotate(90deg);
+  -ms-transform: translateX(-50%) rotate(90deg);
+  -o-transform: translateX(-50%) rotate(90deg);
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.analog-clock .hour-4 {
+  -webkit-transform: translateX(-50%) rotate(120deg);
+  -moz-transform: translateX(-50%) rotate(120deg);
+  -ms-transform: translateX(-50%) rotate(120deg);
+  -o-transform: translateX(-50%) rotate(120deg);
+  transform: translateX(-50%) rotate(120deg);
+}
+
+.analog-clock .hour-5 {
+  -webkit-transform: translateX(-50%) rotate(150deg);
+  -moz-transform: translateX(-50%) rotate(150deg);
+  -ms-transform: translateX(-50%) rotate(150deg);
+  -o-transform: translateX(-50%) rotate(150deg);
+  transform: translateX(-50%) rotate(150deg);
+}
+
+.analog-clock .hour-6 {
+  -webkit-transform: translateX(-50%) rotate(180deg);
+  -moz-transform: translateX(-50%) rotate(180deg);
+  -ms-transform: translateX(-50%) rotate(180deg);
+  -o-transform: translateX(-50%) rotate(180deg);
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.analog-clock .hour-7 {
+  -webkit-transform: translateX(-50%) rotate(210deg);
+  -moz-transform: translateX(-50%) rotate(210deg);
+  -ms-transform: translateX(-50%) rotate(210deg);
+  -o-transform: translateX(-50%) rotate(210deg);
+  transform: translateX(-50%) rotate(210deg);
+}
+
+.analog-clock .hour-8 {
+  -webkit-transform: translateX(-50%) rotate(240deg);
+  -moz-transform: translateX(-50%) rotate(240deg);
+  -ms-transform: translateX(-50%) rotate(240deg);
+  -o-transform: translateX(-50%) rotate(240deg);
+  transform: translateX(-50%) rotate(240deg);
+}
+
+.analog-clock .hour-9 {
+  -webkit-transform: translateX(-50%) rotate(270deg);
+  -moz-transform: translateX(-50%) rotate(270deg);
+  -ms-transform: translateX(-50%) rotate(270deg);
+  -o-transform: translateX(-50%) rotate(270deg);
+  transform: translateX(-50%) rotate(270deg);
+}
+
+.analog-clock .hour-10 {
+  -webkit-transform: translateX(-50%) rotate(300deg);
+  -moz-transform: translateX(-50%) rotate(300deg);
+  -ms-transform: translateX(-50%) rotate(300deg);
+  -o-transform: translateX(-50%) rotate(300deg);
+  transform: translateX(-50%) rotate(300deg);
+}
+
+.analog-clock .hour-11 {
+  -webkit-transform: translateX(-50%) rotate(330deg);
+  -moz-transform: translateX(-50%) rotate(330deg);
+  -ms-transform: translateX(-50%) rotate(330deg);
+  -o-transform: translateX(-50%) rotate(330deg);
+  transform: translateX(-50%) rotate(330deg);
+}
+
+.analog-clock .hour-12 {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.analog-clock .hour-1 .hour-name {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.analog-clock .hour-2 .hour-name {
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.analog-clock .hour-3 .hour-name {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.analog-clock .hour-4 .hour-name {
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+
+.analog-clock .hour-5 .hour-name {
+  -webkit-transform: rotate(-150deg);
+  -moz-transform: rotate(-150deg);
+  -ms-transform: rotate(-150deg);
+  -o-transform: rotate(-150deg);
+  transform: rotate(-150deg);
+}
+
+.analog-clock .hour-6 .hour-name {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.analog-clock .hour-7 .hour-name {
+  -webkit-transform: rotate(-210deg);
+  -moz-transform: rotate(-210deg);
+  -ms-transform: rotate(-210deg);
+  -o-transform: rotate(-210deg);
+  transform: rotate(-210deg);
+}
+
+.analog-clock .hour-8 .hour-name {
+  -webkit-transform: rotate(-240deg);
+  -moz-transform: rotate(-240deg);
+  -ms-transform: rotate(-240deg);
+  -o-transform: rotate(-240deg);
+  transform: rotate(-240deg);
+}
+
+.analog-clock .hour-9 .hour-name {
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+}
+
+.analog-clock .hour-10 .hour-name {
+  -webkit-transform: rotate(-300deg);
+  -moz-transform: rotate(-300deg);
+  -ms-transform: rotate(-300deg);
+  -o-transform: rotate(-300deg);
+  transform: rotate(-300deg);
+}
+
+.analog-clock .hour-11 .hour-name {
+  -webkit-transform: rotate(-330deg);
+  -moz-transform: rotate(-330deg);
+  -ms-transform: rotate(-330deg);
+  -o-transform: rotate(-330deg);
+  transform: rotate(-330deg);
 }
