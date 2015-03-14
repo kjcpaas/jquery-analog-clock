@@ -3,21 +3,34 @@
     <script src="vendor/js/jquery.min.js"></script>
     <script src="vendor/js/moment.min.js"></script>
     <script src="lib/js/jquery-analog-clock.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/css/jquery-analog-clock.css" />
     <link rel="stylesheet" href="app.css" />
 
     <script>
       $(document).ready(function() {
         $(".clock-sample").analogClock({
-          initTime: "15:30"
+          timeFormat: 'h:mm a',
+          onTimeSet: function(time, clockEl) {
+            clockEl.parent().find('.time').text(time);
+          }
         });
       });
     </script>
   </head>
 
   <body>
-    <div class="clock-sample" data-init-time="1:35"></div>
-    <div class="clock-sample" data-init-time="5:20"></div>
-    <div class="clock-sample" data-init-time="21:45"></div>
+    <div>
+      <div class="clock-sample" data-init-time="1:35 PM"></div>
+      <div class="time"></div>
+    <div>
+    <div>
+      <div class="clock-sample" data-init-time="5:20 AM"></div>
+      <div class="time"></div>
+    </div>
+    <div>
+      <div class="clock-sample" data-init-time="9:45 PM"></div>
+      <div class="time"></div>
+    </div>
   </body>
 </html>

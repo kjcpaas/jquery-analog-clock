@@ -57,6 +57,18 @@ Labels that will be shown when `showLabels` is true.
 
 **Default:** ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
 
+##### onTimeSet
+
+Callback after setting time. It will pass the formatted time and jQuery element of the clock to the handler.
+
+Sample handler format:
+
+```javascript
+function onTimeSetHandler(formattedTime, jQueryEl) {
+  ...do whatever...
+}
+````
+
 ### Accessing methods
 
 There are some methods used to access data of analog clock.
