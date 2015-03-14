@@ -2,7 +2,7 @@
 
 Jquery plugin to display time in analog clocks.
 
-![](http://i.gyazo.com/5bfcc3c42036647ef6e58144f73b499f.png)
+![](http://i.gyazo.com/ed19f082e9814e350395719ea1ee3dc6.png)
 
 This is a very early stage of the plugin so there are still lots of planned improvements.
 
@@ -37,9 +37,25 @@ Options can also be specified on the element itself. These options take preceden
 
 Time to be displayed in the clock
 
+**Default:** '0:00'
+
 ##### timeFormat
 
-Time format to be used in processing time values. Refer to Moment.js [parsing documentation](http://momentjs.com/docs/#/parsing/string-format/) for other formats you can use. *default: 'H:mm' (24-hour format)*
+Time format to be used in processing time values. Refer to Moment.js [parsing documentation](http://momentjs.com/docs/#/parsing/string-format/) for other formats you can use.
+
+**Default:** 'H:mm' (24-hour format)
+
+##### showLabels
+
+Shows labels for the hours.
+
+**Default:** true
+
+##### hourLabels
+
+Labels that will be shown when `showLabels` is true.
+
+**Default:** ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
 
 ### Accessing methods
 
