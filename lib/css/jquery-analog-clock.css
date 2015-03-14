@@ -51,6 +51,10 @@
   -ms-transform-origin: center bottom;
   -o-transform-origin: center bottom;
   transform-origin: center bottom;
+  user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
 }
 
 .analog-clock .hour-1 {
