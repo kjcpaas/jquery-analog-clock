@@ -79,10 +79,19 @@
 .analog-clock .hour-label .spoke {
   position: absolute;
   top: 0;
-  margin-top: 20px;
+  padding-top: 20px;
+  height: 100%;
+  display: none;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.analog-clock .hour-label .spoke-line {
   height: 100%;
   width: 0;
-  display: none;
   border: 1px solid rgba(86,61,124,0.2);
 }
 
