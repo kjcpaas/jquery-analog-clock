@@ -21,13 +21,17 @@
   left: 0;
 }
 
-.analog-clock .hour-hand-container,
-.analog-clock .minute-hand-container,
-.analog-clock .center-circle-container,
-.analog-clock .label-container {
-  width: inherit;
-  height: inherit;
+.analog-clock .hour-hand,
+.analog-clock .minute-hand,
+.analog-clock .center-circle,
+.analog-clock .hour-label {
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .analog-clock .hour-hand {
@@ -35,36 +39,42 @@
   width: 0;
   height: 40%;
   border: 3px solid red;
+  -webkit-transform-origin: center 62.5%;
+  -moz-transform-origin: center 62.5%;
+  -ms-transform-origin: center 62.5%;
+  -o-transform-origin: center 62.5%;
+  transform-origin: center 62.5%;
 }
 
 .analog-clock .minute-hand {
-  margin: 15% auto;
+  margin: 14% auto;
   width: 0;
-  height: 55%;
+  height: 60%;
   border: 2px solid blue;
+  -webkit-transform-origin: center 60%;
+  -moz-transform-origin: center 60%;
+  -ms-transform-origin: center 60%;
+  -o-transform-origin: center 60%;
+  transform-origin: center 60%;
 }
 
 .analog-clock .center-circle {
   width: 0;
   height: 0;
-  margin: 0 auto;
+  margin: 50% auto;
   border-radius: 5px;
   border: 5px solid black;
-  top: 50%;
-  position: relative;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .analog-clock .hour-label {
   width: 20px;
-  cursor: pointer;
-  position: absolute;
   height: 50%;
-  left: 50%;
+  cursor: pointer;
   -webkit-transform-origin: center bottom;
   -moz-transform-origin: center bottom;
   -ms-transform-origin: center bottom;
