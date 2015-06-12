@@ -107,3 +107,7 @@ Gets the time displayed in the clock. If format is not specified, time will be f
 ##### getMeridian()
 
 Determines if time is AM or PM. (returns 'am' or 'pm')
+
+## License
+
+jquery-analog-clock is released under the [MIT License](http://opensource.org/licenses/MIT)
