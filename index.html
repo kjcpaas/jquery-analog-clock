@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+    <script src="lib/js/jquery-analog-clock.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/css/jquery-analog-clock.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <script>
+      $(document).ready(function() {
+        $(".clock-sample").analogClock({
+          timeFormat: 'h:mm a',
+          onTimeSet: function(time, clockEl) {
+            clockEl.parent().find('.time').text(time);
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      Jquery Analog Clock Demo
+    </h1>
+    <p>
+      by <a href="https://github.com/kjcpaas" target="_blank">@kjcpaas</a>
+    </p>
+    <div class="container-fluid">
+      <div class="col-sm-5">
+        <div class="clock-sample" data-init-time="1:35 PM"></div>
+        <div class="time"></div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-7">
+            <div class="clock-sample" data-init-time="9:45 PM"></div>
+            <div class="time"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="clock-sample" data-init-time="5:20 AM"></div>
+            <div class="time"></div>
+          </div>
+        </div>
+      </div>
+    <div>
+  </body>
+</html>
