@@ -12,6 +12,7 @@ This is a very early stage of the plugin so there are still lots of planned impr
 - Displays time based on the given time
 - Support for multiple clocks
 - Responsive
+- Adjust time by interacting with clock
 
 ## Dependencies
 
